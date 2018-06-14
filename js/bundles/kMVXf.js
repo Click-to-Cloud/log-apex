@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([11],{
+webpackJsonppageComponent([6],{
 
-/***/ 264:
+/***/ 294:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _searchSoy = __webpack_require__(265);
+var _step_3Soy = __webpack_require__(295);
 
-var _searchSoy2 = _interopRequireDefault(_searchSoy);
+var _step_3Soy2 = _interopRequireDefault(_step_3Soy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var pageDocsSearch = function (_Component) {
-  _inherits(pageDocsSearch, _Component);
+var kMVXf = function (_Component) {
+  _inherits(kMVXf, _Component);
 
-  function pageDocsSearch() {
-    _classCallCheck(this, pageDocsSearch);
+  function kMVXf() {
+    _classCallCheck(this, kMVXf);
 
-    return _possibleConstructorReturn(this, (pageDocsSearch.__proto__ || Object.getPrototypeOf(pageDocsSearch)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (kMVXf.__proto__ || Object.getPrototypeOf(kMVXf)).apply(this, arguments));
   }
 
-  return pageDocsSearch;
+  return kMVXf;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(pageDocsSearch, _searchSoy2.default);
+_metalSoy2.default.register(kMVXf, _step_3Soy2.default);
 
-exports.default = pageDocsSearch;
+exports.default = kMVXf;
 
 /***/ }),
 
-/***/ 265:
+/***/ 295:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = pageDocsSearch;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.pageDocsSearch = undefined;
+exports.templates = exports.kMVXf = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from search.soy.
+  // This file was automatically generated from step_3.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace pageDocsSearch.
+   * @fileoverview Templates in namespace kMVXf.
    * @public
    */
 
-  goog.module('pageDocsSearch.incrementaldom');
+  goog.module('kMVXf.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -137,15 +137,15 @@ goog.loadModule(function (exports) {
   var itext = IncrementalDom.text;
   var iattr = IncrementalDom.attr;
 
-  var $templateAlias3 = _metalSoy2.default.getTemplate('ElectricSearch.incrementaldom', 'render');
+  var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricCode.incrementaldom', 'render');
 
-  var $templateAlias2 = _metalSoy2.default.getTemplate('Sidebar.incrementaldom', 'render');
-
-  var $templateAlias1 = _metalSoy2.default.getTemplate('main.incrementaldom', 'render');
+  var $templateAlias1 = _metalSoy2.default.getTemplate('tutorial.incrementaldom', 'render');
 
   /**
    * @param {{
-   *    site: (?)
+   *    page: (?),
+   *    site: (?),
+   *    elementClasses: (?)
    * }} opt_data
    * @param {(null|undefined)=} opt_ignored
    * @param {Object<string, *>=} opt_ijData
@@ -153,66 +153,83 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var $$temp;
-    var param294 = function param294() {
-      $templateAlias2({ section: opt_data.site.index.children['docs'], site: opt_data.site }, null, opt_ijData);
-      ie_open('div', null, null, 'class', 'sidebar-offset');
-      ie_open('div', null, null, 'class', 'container-hybrid docs-home-top');
-      ie_open('div', null, null, 'class', 'row');
-      ie_open('div', null, null, 'class', 'col-xs-16');
-      ie_open('h1', null, null, 'class', 'docs-home-top-title');
-      ie_open('span');
-      itext('Electric');
-      ie_close('span');
-      itext(' Docs');
-      ie_close('h1');
-      ie_open('p', null, null, 'class', 'docs-home-top-description');
-      itext('Start learning how to leverage the power of ');
-      var dyn26 = opt_data.site.title;
-      if (typeof dyn26 == 'function') dyn26();else if (dyn26 != null) itext(dyn26);
-      itext('.');
+    var param562 = function param562() {
+      ie_open('h2');
+      var dyn39 = opt_data.page.title;
+      if (typeof dyn39 == 'function') dyn39();else if (dyn39 != null) itext(dyn39);
+      ie_close('h2');
+      ie_open('p');
+      itext('Log.apex supports these log levels:');
       ie_close('p');
-      ie_close('div');
-      ie_close('div');
-      ie_open('div', null, null, 'class', 'row');
-      ie_open('div', null, null, 'class', 'container-hybrid');
-      $templateAlias3({ action: '/docs/search.html', dataURL: (($$temp = opt_data.site.basePath) == null ? '' : $$temp) + '/site.json', path: '/docs/', placeholder: 'Search Docs' }, null, opt_ijData);
-      ie_close('div');
-      ie_close('div');
-      ie_close('div');
-      ie_close('div');
+      ie_open('ul');
+      ie_open('li');
+      itext('Error');
+      ie_close('li');
+      ie_open('li');
+      itext('Warn');
+      ie_close('li');
+      ie_open('li');
+      itext('Info');
+      ie_close('li');
+      ie_open('li');
+      itext('Debug');
+      ie_close('li');
+      ie_open('li');
+      itext('Trace');
+      ie_close('li');
+      ie_close('ul');
+      ie_open('p');
+      itext('You can use any of these logging levels to print the log information.');
+      ie_close('p');
+      $templateAlias2({ code: 'logger.debug(\'Debug message\');', mode: 'javascript' }, null, opt_ijData);
+      ie_open('p');
+      itext('Or you can pass in parameters:');
+      ie_close('p');
+      $templateAlias2({ code: 'logger.debug(\'Debug {0}\', \'message\');', mode: 'javascript' }, null, opt_ijData);
+      ie_open('p');
+      itext('Or you can check it for performance\'s sake.');
+      ie_close('p');
+      $templateAlias2({ code: 'if(logger.isDebugEnabled()) {\n    logger.debug(\'Debug {0}\', \'message\');\n}', mode: 'javascript' }, null, opt_ijData);
+      ie_open('p');
+      itext('However, with logging level Error, you need to provide the exception.');
+      ie_close('p');
+      $templateAlias2({ code: 'try {\n    // ...\n}\ncatch(Exception ex) {\n    logger.error(\'some error\', ex);\n}', mode: 'javascript' }, null, opt_ijData);
+      ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
+      ie_close('input');
+      ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
+      ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ elementClasses: 'docs', content: param294 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param562 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'pageDocsSearch.render';
+    $render.soyTemplateName = 'kMVXf.render';
   }
 
-  exports.render.params = ["site"];
-  exports.render.types = { "site": "?" };
+  exports.render.params = ["page", "site"];
+  exports.render.types = { "page": "?", "site": "?" };
   exports.templates = templates = exports;
   return exports;
 });
 
-var pageDocsSearch = function (_Component) {
-  _inherits(pageDocsSearch, _Component);
+var kMVXf = function (_Component) {
+  _inherits(kMVXf, _Component);
 
-  function pageDocsSearch() {
-    _classCallCheck(this, pageDocsSearch);
+  function kMVXf() {
+    _classCallCheck(this, kMVXf);
 
-    return _possibleConstructorReturn(this, (pageDocsSearch.__proto__ || Object.getPrototypeOf(pageDocsSearch)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (kMVXf.__proto__ || Object.getPrototypeOf(kMVXf)).apply(this, arguments));
   }
 
-  return pageDocsSearch;
+  return kMVXf;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(pageDocsSearch, templates);
-exports.pageDocsSearch = pageDocsSearch;
+_metalSoy2.default.register(kMVXf, templates);
+exports.kMVXf = kMVXf;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[264]);
+},[294]);

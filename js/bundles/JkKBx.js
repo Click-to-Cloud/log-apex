@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([11],{
+webpackJsonppageComponent([5],{
 
-/***/ 264:
+/***/ 296:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _searchSoy = __webpack_require__(265);
+var _step_4Soy = __webpack_require__(297);
 
-var _searchSoy2 = _interopRequireDefault(_searchSoy);
+var _step_4Soy2 = _interopRequireDefault(_step_4Soy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var pageDocsSearch = function (_Component) {
-  _inherits(pageDocsSearch, _Component);
+var JkKBx = function (_Component) {
+  _inherits(JkKBx, _Component);
 
-  function pageDocsSearch() {
-    _classCallCheck(this, pageDocsSearch);
+  function JkKBx() {
+    _classCallCheck(this, JkKBx);
 
-    return _possibleConstructorReturn(this, (pageDocsSearch.__proto__ || Object.getPrototypeOf(pageDocsSearch)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (JkKBx.__proto__ || Object.getPrototypeOf(JkKBx)).apply(this, arguments));
   }
 
-  return pageDocsSearch;
+  return JkKBx;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(pageDocsSearch, _searchSoy2.default);
+_metalSoy2.default.register(JkKBx, _step_4Soy2.default);
 
-exports.default = pageDocsSearch;
+exports.default = JkKBx;
 
 /***/ }),
 
-/***/ 265:
+/***/ 297:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = pageDocsSearch;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.pageDocsSearch = undefined;
+exports.templates = exports.JkKBx = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from search.soy.
+  // This file was automatically generated from step_4.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace pageDocsSearch.
+   * @fileoverview Templates in namespace JkKBx.
    * @public
    */
 
-  goog.module('pageDocsSearch.incrementaldom');
+  goog.module('JkKBx.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -137,15 +137,15 @@ goog.loadModule(function (exports) {
   var itext = IncrementalDom.text;
   var iattr = IncrementalDom.attr;
 
-  var $templateAlias3 = _metalSoy2.default.getTemplate('ElectricSearch.incrementaldom', 'render');
+  var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricCode.incrementaldom', 'render');
 
-  var $templateAlias2 = _metalSoy2.default.getTemplate('Sidebar.incrementaldom', 'render');
-
-  var $templateAlias1 = _metalSoy2.default.getTemplate('main.incrementaldom', 'render');
+  var $templateAlias1 = _metalSoy2.default.getTemplate('tutorial.incrementaldom', 'render');
 
   /**
    * @param {{
-   *    site: (?)
+   *    page: (?),
+   *    site: (?),
+   *    elementClasses: (?)
    * }} opt_data
    * @param {(null|undefined)=} opt_ignored
    * @param {Object<string, *>=} opt_ijData
@@ -153,66 +153,78 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var $$temp;
-    var param294 = function param294() {
-      $templateAlias2({ section: opt_data.site.index.children['docs'], site: opt_data.site }, null, opt_ijData);
-      ie_open('div', null, null, 'class', 'sidebar-offset');
-      ie_open('div', null, null, 'class', 'container-hybrid docs-home-top');
-      ie_open('div', null, null, 'class', 'row');
-      ie_open('div', null, null, 'class', 'col-xs-16');
-      ie_open('h1', null, null, 'class', 'docs-home-top-title');
-      ie_open('span');
-      itext('Electric');
-      ie_close('span');
-      itext(' Docs');
-      ie_close('h1');
-      ie_open('p', null, null, 'class', 'docs-home-top-description');
-      itext('Start learning how to leverage the power of ');
-      var dyn26 = opt_data.site.title;
-      if (typeof dyn26 == 'function') dyn26();else if (dyn26 != null) itext(dyn26);
-      itext('.');
+    var param593 = function param593() {
+      ie_open('h2');
+      var dyn40 = opt_data.page.title;
+      if (typeof dyn40 == 'function') dyn40();else if (dyn40 != null) itext(dyn40);
+      ie_close('h2');
+      ie_open('p');
+      itext('We can configure the logging behavior by creating a static resource named \'logging\', with the content to be a json file.');
       ie_close('p');
-      ie_close('div');
-      ie_close('div');
-      ie_open('div', null, null, 'class', 'row');
-      ie_open('div', null, null, 'class', 'container-hybrid');
-      $templateAlias3({ action: '/docs/search.html', dataURL: (($$temp = opt_data.site.basePath) == null ? '' : $$temp) + '/site.json', path: '/docs/', placeholder: 'Search Docs' }, null, opt_ijData);
-      ie_close('div');
-      ie_close('div');
-      ie_close('div');
-      ie_close('div');
+      $templateAlias2({ code: '[\n    {\n        "patterns": [ "test" ],\n        "level": "Debug",\n        "appenders": [\n            {\n                "name": "Log.DefaultAppender"\n            }\n        ]\n    }\n]', mode: 'JSON' }, null, opt_ijData);
+      ie_open('p');
+      itext('This will control the logger named \'test\', created below.');
+      ie_close('p');
+      $templateAlias2({ code: 'private static final Log logger = Log.getLogger(\'test\');', mode: 'javascript' }, null, opt_ijData);
+      ie_open('p');
+      itext('Patterns here support regular expressions, and you can set multiple patterns as well.');
+      ie_close('p');
+      ie_open('p');
+      itext('And the config will enable the \'test\' logger to print any information with level no less than \'Debug\'(Debug, Info, Warn, Error). Besides, it specifies the appender, which is used to append the log information to somewhere. Here we used the default appender, which uses ');
+      ie_open('code');
+      itext('System.debug');
+      ie_close('code');
+      itext(' as the logging output.');
+      ie_close('p');
+      ie_open('p');
+      ie_open('code');
+      itext('Log.DefaultAppender');
+      ie_close('code');
+      itext(' is the name of the appender class. If you want to use your custom appender, please set the appender name here.');
+      ie_close('p');
+      ie_open('p');
+      itext('You can also load configuration files with other names.');
+      ie_close('p');
+      $templateAlias2({ code: 'Log.configureFromFile(\'otherLogging\');', mode: 'javascript' }, null, opt_ijData);
+      ie_open('p');
+      itext('Just make sure to put this code before you create any loggers.');
+      ie_close('p');
+      ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
+      ie_close('input');
+      ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
+      ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ elementClasses: 'docs', content: param294 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param593 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'pageDocsSearch.render';
+    $render.soyTemplateName = 'JkKBx.render';
   }
 
-  exports.render.params = ["site"];
-  exports.render.types = { "site": "?" };
+  exports.render.params = ["page", "site"];
+  exports.render.types = { "page": "?", "site": "?" };
   exports.templates = templates = exports;
   return exports;
 });
 
-var pageDocsSearch = function (_Component) {
-  _inherits(pageDocsSearch, _Component);
+var JkKBx = function (_Component) {
+  _inherits(JkKBx, _Component);
 
-  function pageDocsSearch() {
-    _classCallCheck(this, pageDocsSearch);
+  function JkKBx() {
+    _classCallCheck(this, JkKBx);
 
-    return _possibleConstructorReturn(this, (pageDocsSearch.__proto__ || Object.getPrototypeOf(pageDocsSearch)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (JkKBx.__proto__ || Object.getPrototypeOf(JkKBx)).apply(this, arguments));
   }
 
-  return pageDocsSearch;
+  return JkKBx;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(pageDocsSearch, templates);
-exports.pageDocsSearch = pageDocsSearch;
+_metalSoy2.default.register(JkKBx, templates);
+exports.JkKBx = JkKBx;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[264]);
+},[296]);

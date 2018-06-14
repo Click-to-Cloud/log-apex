@@ -5312,11 +5312,11 @@ goog.loadModule(function (exports) {
         ie_close('title');
         ie_open('link', null, null, 'rel', 'stylesheet', 'href', 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto+Mono');
         ie_close('link');
-        ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/log-apex/vendor/icon-16/icon-16.css');
+        ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/log-apex/vendor/icon-12/icon-12.css');
         ie_close('link');
         ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/log-apex/vendor/galano/galano.css');
         ie_close('link');
-        ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/log-apex/vendor/icon-12/icon-12.css');
+        ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/log-apex/vendor/icon-16/icon-16.css');
         ie_close('link');
         ie_open('link', null, null, 'rel', 'stylesheet', 'href', '/log-apex/vendor/senna/senna.css');
         ie_close('link');
@@ -45544,8 +45544,8 @@ goog.loadModule(function (exports) {
     ie_open('div', null, null, 'class', 'row');
     ie_open('p', null, null, 'class', 'footer-description col-md-6 col-md-offset-2');
     itext('Copyright \xA9 ');
-    var dyn18 = opt_data.year;
-    if (typeof dyn18 == 'function') dyn18();else if (dyn18 != null) itext(dyn18);
+    var dyn16 = opt_data.year;
+    if (typeof dyn16 == 'function') dyn16();else if (dyn16 != null) itext(dyn16);
     itext(' ');
     ie_open('a', null, null, 'href', 'http://www.clicktocloud.com/');
     itext('Click to Cloud Pty Ltd');
@@ -45661,26 +45661,26 @@ goog.loadModule(function (exports) {
     ie_open('div', null, null, 'class', 'posts-list');
     ie_open('div', null, null, 'class', 'container');
     if (opt_data.posts) {
-      var postList202 = opt_data.posts;
-      var postListLen202 = postList202.length;
-      for (var postIndex202 = 0; postIndex202 < postListLen202; postIndex202++) {
-        var postData202 = postList202[postIndex202];
+      var postList178 = opt_data.posts;
+      var postListLen178 = postList178.length;
+      for (var postIndex178 = 0; postIndex178 < postListLen178; postIndex178++) {
+        var postData178 = postList178[postIndex178];
         ie_open('div', null, null, 'class', 'post-item container-blog');
-        ie_open('a', null, null, 'class', 'post-item__link', 'href', postData202.url);
+        ie_open('a', null, null, 'class', 'post-item__link', 'href', postData178.url);
         ie_open('small');
         itext('By ');
-        var dyn19 = postData202.author;
-        if (typeof dyn19 == 'function') dyn19();else if (dyn19 != null) itext(dyn19);
+        var dyn17 = postData178.author;
+        if (typeof dyn17 == 'function') dyn17();else if (dyn17 != null) itext(dyn17);
         itext(' ');
         ie_open('span');
         itext('| ');
-        var dyn20 = postData202.date;
-        if (typeof dyn20 == 'function') dyn20();else if (dyn20 != null) itext(dyn20);
+        var dyn18 = postData178.date;
+        if (typeof dyn18 == 'function') dyn18();else if (dyn18 != null) itext(dyn18);
         ie_close('span');
         ie_close('small');
         ie_open('h4', null, null, 'class', 'post-item__title');
-        var dyn21 = postData202.title;
-        if (typeof dyn21 == 'function') dyn21();else if (dyn21 != null) itext(dyn21);
+        var dyn19 = postData178.title;
+        if (typeof dyn19 == 'function') dyn19();else if (dyn19 != null) itext(dyn19);
         ie_close('h4');
         ie_close('a');
         ie_close('div');
@@ -45831,22 +45831,22 @@ goog.loadModule(function (exports) {
    * @return {void}
    * @suppress {checkTypes}
    */
-  function __deltemplate_s220_d34389eb(opt_data, opt_ignored, opt_ijData) {
+  function __deltemplate_s196_d34389eb(opt_data, opt_ignored, opt_ijData) {
     ie_open('a', null, null, 'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''), 'href', opt_data.page.url);
     if (opt_data.page.icon) {
       ie_void('span', null, null, 'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-    var dyn22 = opt_data.page.title;
-    if (typeof dyn22 == 'function') dyn22();else if (dyn22 != null) itext(dyn22);
+    var dyn20 = opt_data.page.title;
+    if (typeof dyn20 == 'function') dyn20();else if (dyn20 != null) itext(dyn20);
     ie_close('span');
     ie_close('a');
   }
-  exports.__deltemplate_s220_d34389eb = __deltemplate_s220_d34389eb;
+  exports.__deltemplate_s196_d34389eb = __deltemplate_s196_d34389eb;
   if (goog.DEBUG) {
-    __deltemplate_s220_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s220_d34389eb';
+    __deltemplate_s196_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s196_d34389eb';
   }
-  soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s220_d34389eb);
+  soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s196_d34389eb);
 
   exports.render.params = ["section", "site"];
   exports.render.types = { "section": "?", "site": "?" };
@@ -46368,8 +46368,8 @@ goog.loadModule(function (exports) {
     if (opt_data.time) {
       ie_void('span', null, null, 'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn23 = opt_data.time;
-      if (typeof dyn23 == 'function') dyn23();else if (dyn23 != null) itext(dyn23);
+      var dyn21 = opt_data.time;
+      if (typeof dyn21 == 'function') dyn21();else if (dyn21 != null) itext(dyn21);
     }
     ie_close('p');
   }

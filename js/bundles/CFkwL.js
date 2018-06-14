@@ -1,7 +1,7 @@
 var pageComponent =
-webpackJsonppageComponent([11],{
+webpackJsonppageComponent([18],{
 
-/***/ 264:
+/***/ 276:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,9 +43,9 @@ __webpack_require__(14);
 
 __webpack_require__(15);
 
-var _searchSoy = __webpack_require__(265);
+var _defaultAsyncAppenderSoy = __webpack_require__(277);
 
-var _searchSoy2 = _interopRequireDefault(_searchSoy);
+var _defaultAsyncAppenderSoy2 = _interopRequireDefault(_defaultAsyncAppenderSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,27 +55,27 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var pageDocsSearch = function (_Component) {
-  _inherits(pageDocsSearch, _Component);
+var CFkwL = function (_Component) {
+  _inherits(CFkwL, _Component);
 
-  function pageDocsSearch() {
-    _classCallCheck(this, pageDocsSearch);
+  function CFkwL() {
+    _classCallCheck(this, CFkwL);
 
-    return _possibleConstructorReturn(this, (pageDocsSearch.__proto__ || Object.getPrototypeOf(pageDocsSearch)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (CFkwL.__proto__ || Object.getPrototypeOf(CFkwL)).apply(this, arguments));
   }
 
-  return pageDocsSearch;
+  return CFkwL;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(pageDocsSearch, _searchSoy2.default);
+_metalSoy2.default.register(CFkwL, _defaultAsyncAppenderSoy2.default);
 
-exports.default = pageDocsSearch;
+exports.default = CFkwL;
 
 /***/ }),
 
-/***/ 265:
+/***/ 277:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84,7 +84,7 @@ exports.default = pageDocsSearch;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.templates = exports.pageDocsSearch = undefined;
+exports.templates = exports.CFkwL = undefined;
 
 var _metalComponent = __webpack_require__(1);
 
@@ -106,15 +106,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var templates;
 goog.loadModule(function (exports) {
 
-  // This file was automatically generated from search.soy.
+  // This file was automatically generated from defaultAsyncAppender.soy.
   // Please don't edit this file by hand.
 
   /**
-   * @fileoverview Templates in namespace pageDocsSearch.
+   * @fileoverview Templates in namespace CFkwL.
    * @public
    */
 
-  goog.module('pageDocsSearch.incrementaldom');
+  goog.module('CFkwL.incrementaldom');
 
   /** @suppress {extraRequire} */
   var soy = goog.require('soy');
@@ -137,14 +137,13 @@ goog.loadModule(function (exports) {
   var itext = IncrementalDom.text;
   var iattr = IncrementalDom.attr;
 
-  var $templateAlias3 = _metalSoy2.default.getTemplate('ElectricSearch.incrementaldom', 'render');
+  var $templateAlias2 = _metalSoy2.default.getTemplate('ElectricCode.incrementaldom', 'render');
 
-  var $templateAlias2 = _metalSoy2.default.getTemplate('Sidebar.incrementaldom', 'render');
-
-  var $templateAlias1 = _metalSoy2.default.getTemplate('main.incrementaldom', 'render');
+  var $templateAlias1 = _metalSoy2.default.getTemplate('guide.incrementaldom', 'render');
 
   /**
    * @param {{
+   *    page: (?),
    *    site: (?)
    * }} opt_data
    * @param {(null|undefined)=} opt_ignored
@@ -153,66 +152,78 @@ goog.loadModule(function (exports) {
    * @suppress {checkTypes}
    */
   function $render(opt_data, opt_ignored, opt_ijData) {
-    var $$temp;
-    var param294 = function param294() {
-      $templateAlias2({ section: opt_data.site.index.children['docs'], site: opt_data.site }, null, opt_ijData);
-      ie_open('div', null, null, 'class', 'sidebar-offset');
-      ie_open('div', null, null, 'class', 'container-hybrid docs-home-top');
-      ie_open('div', null, null, 'class', 'row');
-      ie_open('div', null, null, 'class', 'col-xs-16');
-      ie_open('h1', null, null, 'class', 'docs-home-top-title');
-      ie_open('span');
-      itext('Electric');
-      ie_close('span');
-      itext(' Docs');
-      ie_close('h1');
-      ie_open('p', null, null, 'class', 'docs-home-top-description');
-      itext('Start learning how to leverage the power of ');
-      var dyn26 = opt_data.site.title;
-      if (typeof dyn26 == 'function') dyn26();else if (dyn26 != null) itext(dyn26);
-      itext('.');
+    var param457 = function param457() {
+      ie_open('h6');
+      var dyn34 = opt_data.page.description;
+      if (typeof dyn34 == 'function') dyn34();else if (dyn34 != null) itext(dyn34);
+      ie_close('h6');
+      ie_open('article', null, null, 'id', '1');
+      ie_open('h2');
+      itext('Default Appender');
+      ie_close('h2');
+      ie_open('p');
+      itext('Log.apex has a default async appender, ');
+      ie_open('code');
+      itext('Log.DefaultAsyncAppender');
+      ie_close('code');
+      itext(', which outputs logging information to');
+      ie_open('code');
+      itext('System.debug');
+      ie_close('code');
+      itext(' asynchronously in a queueable job.');
       ie_close('p');
-      ie_close('div');
-      ie_close('div');
-      ie_open('div', null, null, 'class', 'row');
-      ie_open('div', null, null, 'class', 'container-hybrid');
-      $templateAlias3({ action: '/docs/search.html', dataURL: (($$temp = opt_data.site.basePath) == null ? '' : $$temp) + '/site.json', path: '/docs/', placeholder: 'Search Docs' }, null, opt_ijData);
-      ie_close('div');
-      ie_close('div');
-      ie_close('div');
-      ie_close('div');
+      ie_open('p');
+      itext('The default async appender has similar behavior as the default appender except that it runs asynchronously.');
+      ie_close('p');
+      ie_open('p');
+      itext('Here is how you configure it.');
+      ie_close('p');
+      $templateAlias2({ code: '[\n    {\n        "patterns": [ "testAsync" ],\n        "level": "Debug",\n        "appenders": [\n            {\n                "name": "Log.DefaultAsyncAppender"\n            }\n        ]\n    }\n]', mode: 'JSON' }, null, opt_ijData);
+      ie_close('article');
+      ie_open('article', null, null, 'id', '2');
+      ie_open('h2');
+      itext('Options');
+      ie_close('h2');
+      ie_open('p');
+      itext('The default async appender shares the same options as the default appender.');
+      ie_close('p');
+      ie_close('article');
+      ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
+      ie_close('input');
+      ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
+      ie_close('input');
     };
-    $templateAlias1(soy.$$assignDefaults({ elementClasses: 'docs', content: param294 }, opt_data), null, opt_ijData);
+    $templateAlias1(soy.$$assignDefaults({ content: param457 }, opt_data), null, opt_ijData);
   }
   exports.render = $render;
   if (goog.DEBUG) {
-    $render.soyTemplateName = 'pageDocsSearch.render';
+    $render.soyTemplateName = 'CFkwL.render';
   }
 
-  exports.render.params = ["site"];
-  exports.render.types = { "site": "?" };
+  exports.render.params = ["page", "site"];
+  exports.render.types = { "page": "?", "site": "?" };
   exports.templates = templates = exports;
   return exports;
 });
 
-var pageDocsSearch = function (_Component) {
-  _inherits(pageDocsSearch, _Component);
+var CFkwL = function (_Component) {
+  _inherits(CFkwL, _Component);
 
-  function pageDocsSearch() {
-    _classCallCheck(this, pageDocsSearch);
+  function CFkwL() {
+    _classCallCheck(this, CFkwL);
 
-    return _possibleConstructorReturn(this, (pageDocsSearch.__proto__ || Object.getPrototypeOf(pageDocsSearch)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (CFkwL.__proto__ || Object.getPrototypeOf(CFkwL)).apply(this, arguments));
   }
 
-  return pageDocsSearch;
+  return CFkwL;
 }(_metalComponent2.default);
 
-_metalSoy2.default.register(pageDocsSearch, templates);
-exports.pageDocsSearch = pageDocsSearch;
+_metalSoy2.default.register(CFkwL, templates);
+exports.CFkwL = CFkwL;
 exports.templates = templates;
 exports.default = templates;
 /* jshint ignore:end */
 
 /***/ })
 
-},[264]);
+},[276]);
